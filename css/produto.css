@@ -26,7 +26,7 @@
 
 .radio {
     appearance: none;
-    background-color: rgba(192, 192, 192, 0.987);
+    background-color: #707070;
     border-radius: 10px;
     cursor: pointer;
     height: 8px;
@@ -35,6 +35,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: 0 auto;
 }
 
 .radio:before {
@@ -52,10 +53,10 @@
 }
 
 .estilo {
-    background-color: rgba(192, 192, 192, 0.987);
+    background-color: #707070;
     height: 80px;
     width: 6px;
     border-radius: 10px 10px 10px 10px;
-    opacity: 0.5;
+    opacity: 0.8;
 }
 

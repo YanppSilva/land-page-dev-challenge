@@ -54,7 +54,8 @@
 }
 
 .btn-cart:hover {
-    transform: scale(1.015);
+    background-color: #161616;
+    transition: 250ms;
 }
 
 .btn-cart:active {

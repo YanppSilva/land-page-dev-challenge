@@ -4,8 +4,6 @@ header {
 }
 
 .top-bar {
-    /* display: flex; */
-    /* justify-content: space-between; */
     width: 1800px;
 }
 
@@ -13,7 +11,6 @@ header {
     display: flex;
     margin: 0 5%;
 }
-
 
 .logo {
     display: flex;
@@ -25,18 +22,42 @@ header {
     width: 100px;
 }
 
-.nav-1 {
-    margin: 0 auto;
-    font-size: 18px;
-    /* display: flex; */
-    align-items: center;
-    gap: 20px;
-    justify-content: center;
-    align-items: center;
-}
-
 .top-bar .nav1{
     display: flex;
+}
+
+.nav-1 {
+    align-items: center;
+    font-size: 18px;
+    gap: 20px;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.nav-1 li {
+    text-align: center;
+    width: 100%;
+}
+
+.nav-1 a {
+    cursor: pointer;
+}
+
+.nav-1 a::after {
+    background-color: #ca3b3a;
+    border-radius: 10px;
+    content: '';
+    display: block;
+    position: relative;
+    height: 2px;
+    transform: scaleX(0);
+    transform-origin: left;
+}
+
+.nav-1 a:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+    transition: .4s ease;
 }
 
 .nav-2 {
@@ -47,6 +68,7 @@ header {
 }
 .nav-icons {
     list-style-type: none;
+    cursor: pointer;
 }
 
 .nav-icons i {
