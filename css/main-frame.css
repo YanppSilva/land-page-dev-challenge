@@ -1,0 +1,88 @@
+.main-frame{
+    align-items:center;
+    display: flex;
+    justify-content: space-between;
+    margin: 100px 0 0 350px;
+    width: 65%;
+}
+
+.card-venda p {
+    font-weight: 700;
+}
+
+.card-venda h2 {
+    color: #ca3b3a;
+    font-size: 35px;
+    font-weight: 700;
+    margin-bottom: 35px;
+    height: 40px;
+    width: 20vw;
+}
+
+.sub-spec {
+    font-weight: bold;
+}
+
+.details .details-headphone {
+    opacity: .7;
+}
+
+.details .itens {
+    margin: 25px 0;
+}
+.payment {
+    display: flex;
+    margin: 30px 0 0 0;
+    align-items: center;
+}
+
+.value {
+    width: 150px;
+    font-size: 27px;
+    font-weight: bold;
+    margin-right: 25px;
+}
+
+.btn-cart {
+    border: none;
+    width: 60%;
+    padding: 16px 0;
+    font-weight: 800;
+    color: white;
+    background-color: #ca3b3a;
+    cursor: pointer;
+}
+
+.btn-cart:hover {
+    transform: scale(1.015);
+}
+
+.btn-cart:active {
+    background: #ce3030;
+}  
+
+/* Estrelas */
+.estrelas {
+    margin: 25px 0; 
+    display: flex;
+    align-items: center;
+}
+
+.estrelas .details-headphone{
+    font-weight: 600;
+    color: #ca3b3a;
+    margin-left: 10px;
+}
+
+.estrelas input[type=radio] {
+    display: none;
+}
+
+.estrelas label i.fa:before {
+    font-size: 20px;
+    content:'\f005';
+    color: #ca3b3a;
+}
+.estrelas input[type=radio]:checked ~ label i.fa:before {
+    color: #CCC;
+}

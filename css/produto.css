@@ -1,0 +1,61 @@
+.produto {
+    /* width: 23vw; */
+    height: 53vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.scroll {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 62.42px);
+    position: absolute;
+    margin-left: 15px;
+    justify-content: space-around;
+}
+
+.scroll-radio {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    height: 250px;
+    justify-content: space-around;
+}
+
+.radio {
+    appearance: none;
+    background-color: rgba(192, 192, 192, 0.987);
+    border-radius: 10px;
+    cursor: pointer;
+    height: 8px;
+    width: 8px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.radio:before {
+    content: '';
+    position: absolute;
+    height: 12px;
+    width: 12px;
+    background-color: #ca3b3a;
+    border-radius: 10PX;
+    opacity: 0;
+}
+
+.radio:checked:before {
+    opacity: 1;
+}
+
+.estilo {
+    background-color: rgba(192, 192, 192, 0.987);
+    height: 80px;
+    width: 6px;
+    border-radius: 10px 10px 10px 10px;
+    opacity: 0.5;
+}
+

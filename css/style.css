@@ -2,159 +2,19 @@ body {
     background-color: white;
     font-family: 'Montserrat', sans-serif;
 }
-.top-bar {
-    max-width: 1800px;
-    margin: 0 auto;
-    justify-content: center;
-    /* background-color: yellow; */
-}
 
-.top-bar nav {
-    margin: 0 5%;
+main {
+    /* background-color: green; */
     display: flex;
 }
 
-.logo {
-    margin: 0;
-    width: 100px;
-    display: flex;
-}
-.nav-1 {
-    margin: 0 auto;
-    font-size: 18px;
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    justify-content: center;
-    align-items: center;
-}
 
-.top-bar .nav1{
-    display: flex;
-}
 
-.main-frame{
-    margin-top: 100px;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-}
 
-.produto {
-    width: 23vw;
-    height: 53vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
-/* .card-venda {
-    background-color: gray;
-} */
 
-.card-venda p {
-    font-weight: 700;
-}
 
-.card-venda h2 {
-    color: #ca3b3a;
-    font-size: 35px;
-    font-weight: 700;
-    margin-bottom: 35px;
-    height: 40px;
-    width: 20vw;
-}
 
-.sub-spec {
-    font-weight: bold;
-}
 
-.details .details-headphone {
-    opacity: .7;
-}
 
-.details .itens {
-    margin: 25px 0;
-}
-.payment {
-    display: flex;
-    margin: 30px 0 0 0;
-    align-items: center;
-}
 
-.value {
-    width: 150px;
-    font-size: 27px;
-    font-weight: bold;
-    margin-right: 25px;
-}
-
-.btn-cart {
-    border: none;
-    width: 60%;
-    padding: 16px 0;
-    font-weight: 800;
-    color: white;
-    background-color: #ca3b3a;
-    cursor: pointer;
-}
-
-.btn-cart:hover {
-    transform: scale(1.015);
-}
-
-.btn-cart:active {
-    background: #ce3030;
-}
-
-.footer {
-    background-color: rgb(247, 235, 197);
-    color: black;
-    font-size: 18px;
-    height: 100px;
-    max-width: 1800px;
-    margin: 181px 60px 0 60px;
-    display: flex;
-    align-items: center;   
-    justify-content: space-evenly; 
-    border-radius: 30px 30px 0 0;
-}
-
-.footer p {
-    width: 240px;
-    justify-content: center;
-}
-
-.footer i {
-    width: 30px;
-    height: 100%;
-    margin-right: 10px;
-    justify-content: center;
-    align-items: center;
-}   
-
-/* Estrelas */
-.estrelas {
-    margin: 25px 0; 
-    display: flex;
-    align-items: center;
-}
-
-.estrelas .details-headphone{
-    font-weight: 600;
-    color: #ca3b3a;
-    margin-left: 10px;
-}
-
-.estrelas input[type=radio] {
-    display: none;
-}
-
-.estrelas label i.fa:before {
-    font-size: 20px;
-    content:'\f005';
-    color: #ca3b3a;
-}
-.estrelas input[type=radio]:checked ~ label i.fa:before {
-    color: #CCC;
-}

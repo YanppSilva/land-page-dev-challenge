@@ -1,0 +1,31 @@
+.footer {
+    background-color: rgb(247, 235, 197);
+    color: black;
+    font-size: 18px;
+    height: 100px;
+    max-width: 1800px;
+    margin: 181px 60px 0 60px;
+    display: flex;
+    align-items: center;   
+    justify-content: space-evenly; 
+    border-radius: 15px 15px 0 0;
+}
+
+.footer p {
+    width: 240px;
+    justify-content: center;
+}
+
+.footer i {
+    width: 30px;
+    height: 100%;
+    margin-right: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.descricao {
+    align-items: center;
+    display: flex;
+    padding: 0 auto;
+}

@@ -6,19 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="reset/reset.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-    <!-- <script src="https://kit.fontawesome.com/dcbc31e555.js" crossorigin="anonymous"></script> -->
+    <link rel="stylesheet" href="css/top-bar.css">
+    <link rel="stylesheet" href="css/produto.css">
+    <link rel="stylesheet" href="css/main-frame.css">
+    <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/dcbc31e555.js" crossorigin="anonymous"></script>
     <title>Fone Landing Page</title>
 </head>
 
 <body>
     <header>
         <div class="top-bar">
+            <div class="logo"><img src="assets/logo.svg" alt="Imagem Logo - Shop | Your Virtual Shopping"></div>
             <nav>
-                <h1><img class="logo" src="assets/logo.svg" alt="Imagem Logo - Shop | Your Virtual Shopping"></h1>
                 <ul class="nav-1">
                     <li><a>Home</a></li>
                     <li><a>Abaout</a></li>
@@ -26,12 +30,24 @@
                     <li><a>Support</a></li>
                 </ul>
             </nav>
-        </div>
-        <div class="nav-2">
+            <div class="nav-2">
+                <li class="nav-icons"><i class="fa-solid fa-magnifying-glass fa-lg"></i></li>            
+                <li class="nav-icons"><i class="fa-solid fa-cart-shopping fa-lg"></i></i></li>
+                <li class="nav-icons"><i class="fa-solid fa-bars fa-lg"></i></li>
+            </div>
         </div>
     </header>
 
-    <main>
+    <main class="main">
+        <div class="scroll">
+            <div class="estilo"></div>
+            <div class="scroll-radio">
+                <input class="radio "type="radio" name="theradio">
+                <input class="radio "type="radio" name="theradio">
+                <input class="radio "type="radio" name="theradio">
+            </div>
+            <div class="estilo"></div>
+        </div>        
         <div class="main-frame">
             <div class="img-product">
                 <img class="produto" + src="assets/fone.png" alt="Imagem fone Hyper X ON-EAR">
@@ -62,19 +78,27 @@
                         <p  class="sub-spec">Frequency Response</p>
                         <span class="details-headphone">4 Hz + 100.000 Hz</span>
                     </div>
-                </div>
-                <div class="payment">
-                    <p class="value">R$ 89,99</p>
-                    <button class="btn-cart">ADD TO CART</button>
-                </div>
+                    <div class="payment">
+                        <p class="value">R$ 89,99</p>
+                        <button class="btn-cart">ADD TO CART</button>
+                    </div>
+                </div>                
             </div>
         </div>
     </main>
-
-    <footer class="footer">
-        <p><i class="fa-solid fa-headphones"></i>High-Resolution Audio compatible</p>
-        <p><i class="fa-brands fa-bluetooth-b"></i>Wireless connectivity using bluetooth</p>
-        <p><i class="fa-solid fa-battery-empty"></i>A powerful battery that lasts up to 4 hours of use</p>
-    </footer>
 </body>
+<footer class="footer">
+    <div class="descricao">
+        <i class="fa-solid fa-headphones fa-lg"></i>
+        <p>High-Resolution Audio compatible</p>
+    </div>
+    <div class="descricao">
+        <i class="fa-brands fa-bluetooth-b fa-lg"></i>
+        <p>Wireless connectivity using bluetooth</p>
+    </div>
+    <div class="descricao">
+        <i class="fa-solid fa-battery-empty fa-lg"></i>
+        <p>A powerful battery that lasts up to 4 hours of use</p>
+    </div>        
+</footer>
 </html>
