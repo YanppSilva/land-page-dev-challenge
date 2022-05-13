@@ -1,9 +1,12 @@
 .produto {
-    /* width: 23vw; */
     height: 53vh;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.produto .img-product {
+    width: 100%;
 }
 
 .scroll {
@@ -57,6 +60,19 @@
     height: 80px;
     width: 6px;
     border-radius: 10px 10px 10px 10px;
-    opacity: 0.8;
+    opacity: 0.5;
+}
+
+@media screen and (max-width: 768px) {
+    .produto {
+        align-items: center;
+        height: 40vh;
+        justify-content: center;
+        margin: 50px 0 50px 0;
+    }
+
+    .scroll{
+        height: 100vh;
+    }
 }
 

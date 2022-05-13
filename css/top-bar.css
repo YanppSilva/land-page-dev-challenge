@@ -1,10 +1,10 @@
-header {
-    display: flex;
-    justify-content: center;
-}
+
 
 .top-bar {
-    width: 1800px;
+    width: 100vw;
+    max-width: 1800px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .top-bar nav {
@@ -28,6 +28,7 @@ header {
 
 .nav-1 {
     align-items: center;
+    display: flex;
     font-size: 18px;
     gap: 20px;
     justify-content: center;
@@ -37,6 +38,10 @@ header {
 .nav-1 li {
     text-align: center;
     width: 100%;
+}
+
+.nav-1 ul li {
+    font-size: 2rem;
 }
 
 .nav-1 a {
@@ -75,24 +80,12 @@ header {
     align-items: center;
 }
 
-@media screen and (min-width: 0) {
+@media screen and (max-width: 768px) {
     .nav-1 {
         display: none;
     }
 
     .top-bar {
-        display: flex;
         justify-content: space-around;
-    }
-}
-
-@media screen and (min-width: 768px) {
-    .nav-1 {
-        display: flex;
-    }
-
-    .top-bar {
-        display: flex;
-        justify-content: space-between;
     }
 }

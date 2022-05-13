@@ -87,3 +87,49 @@
 .estrelas input[type=radio]:checked ~ label i.fa:before {
     color: #CCC;
 }
+
+@media screen and (max-width: 768px) {
+    
+    .main-frame{
+        /* display: block; */
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        flex-direction: column;
+        margin: auto;
+    }
+    
+    .card-venda {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 40vw;
+    }
+
+    .card-venda h2 {
+        font-size: 2.1rem;
+        font-weight: 700;
+        margin-bottom: 20px;
+        height: 35px;
+        width: 50vw;
+    }
+
+    .card-venda p {
+        justify-content: left;
+    }
+
+    .details .itens {
+        margin: 15px 0;
+    }
+
+    .estrelas {
+        margin: 15px 0;
+    }
+
+    .estrelas label i.fa:before {
+        font-size: 25px;
+    }
+
+    
+
+}

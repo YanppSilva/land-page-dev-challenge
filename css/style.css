@@ -1,3 +1,8 @@
+header {
+    display: flex;
+    justify-content: center;
+}
+
 body {
     background-color: white;
     font-family: 'Montserrat', sans-serif;
@@ -6,6 +11,14 @@ body {
 main {
     display: flex;
 }
+
+@media screen and (max-width: 768px) {
+    .main {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
 
 
 

@@ -1,8 +1,9 @@
 .footer {
     background-color: rgb(247, 235, 197);
     color: black;
-    font-size: 18px;
+    font-size: 1.1rem;
     height: 100px;
+    width: 100%;
     max-width: 1800px;
     margin: 181px 60px 0 60px;
     display: flex;
@@ -28,4 +29,27 @@
     align-items: center;
     display: flex;
     padding: 0 auto;
+}
+
+@media screen and (max-width: 768px) {
+    .footer {
+        flex-direction: column;
+        height: 120px;
+        margin: 0 60px;
+        width: 100vw;
+        max-width: 70%;
+    }
+
+    .footer p {
+        width: 270px;
+        align-items: center;
+        justify-content: center;
+        padding: auto;
+    }
+    
+    .descricao {
+        font-size: 0.8rem;
+        margin: 10px 0;
+        padding: 0 auto;
+    }
 }
