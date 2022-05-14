@@ -1,9 +1,14 @@
 .main-frame{
     align-items:center;
     display: flex;
-    justify-content: space-between;
-    margin: 100px 0 0 350px;
-    width: 65%;
+    justify-content: space-evenly;
+    margin: 100px 0 0;
+    width: 100%;
+}
+
+.produto {
+    display: block;
+    max-width: 400px;
 }
 
 .card-venda p {
@@ -15,8 +20,7 @@
     font-size: 35px;
     font-weight: 700;
     margin-bottom: 35px;
-    height: 40px;
-    width: 20vw;
+    /* height: 40px; */
 }
 
 .sub-spec {
@@ -103,14 +107,14 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        width: 40vw;
+        width: 60vw;
     }
 
     .card-venda h2 {
         font-size: 2.1rem;
         font-weight: 700;
         margin-bottom: 20px;
-        height: 35px;
+        /* height: 35px; */
         width: 50vw;
     }
 
@@ -129,7 +133,56 @@
     .estrelas label i.fa:before {
         font-size: 25px;
     }
-
-    
-
 }
+
+@media screen and (max-width: 425px) {
+    .card-venda {
+        width: auto;
+        font-size: 80%;
+    }
+
+    .card-venda h2 {
+        font-size: 1.9rem;
+        font-weight: 700;
+        margin-bottom: 20px;
+        height: 35px;
+        width: auto;
+    }
+
+    .btn-cart {
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .produto {
+        padding-left: 20px;
+        max-width: 270px;
+        height: 38vh;
+
+    }
+
+    .card-venda {
+        width: auto;
+        font-size: 80%;
+        padding-left: 20px;
+    }
+
+    .card-venda h2 {
+        font-size: 1.5rem;
+    }
+
+    .value {
+        font-size: 1.5rem;
+        margin-right: 0;
+    }
+
+    .btn-cart {
+        border: none;
+        width: 60%;
+        padding: 16px 0;
+        font-weight: 700;
+    }
+        
+}
+

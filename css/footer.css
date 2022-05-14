@@ -1,43 +1,51 @@
 .footer {
-    background-color: rgb(247, 235, 197);
     color: black;
     font-size: 1.1rem;
-    height: 100px;
-    width: 100%;
     max-width: 1800px;
     margin: 181px 60px 0 60px;
-    display: flex;
+}
+
+.footer-container {
     align-items: center;   
-    justify-content: space-evenly; 
+    background-color: rgb(247, 235, 197);
     border-radius: 15px 15px 0 0;
+    display: flex;
+    justify-content: center; 
+    height: 100px;
+    width: 100%;
+    
 }
 
 .footer p {
-    width: 240px;
+    width: 55%;
     justify-content: center;
 }
 
 .footer i {
-    width: 30px;
-    height: 100%;
-    margin-right: 10px;
-    justify-content: center;
-    align-items: center;
+    margin-right: 25px;
+    
 }
 
 .descricao {
     align-items: center;
+    justify-content: center;
     display: flex;
-    padding: 0 auto;
 }
 
 @media screen and (max-width: 768px) {
+    
     .footer {
         flex-direction: column;
-        height: 120px;
-        margin: 0 60px;
-        width: 100vw;
-        max-width: 70%;
+        /* height: 120px; */
+        margin: 50px 0 0 0;        
+        padding: 0 60px;
+    }
+    
+    .footer-container {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding-top: 15px;
     }
 
     .footer p {
@@ -45,11 +53,63 @@
         align-items: center;
         justify-content: center;
         padding: auto;
-    }
+    }   
     
     .descricao {
         font-size: 0.8rem;
         margin: 10px 0;
         padding: 0 auto;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .footer-container {           
+        padding: 0 auto;
+        font-size: 0.9rem;
+    }
+
+    .descricao {           
+        padding-left: 10px
+    }
+
+    .descricao p {
+        margin-left: 5px;
+        font-size: 0.8rem;
+    }
+
+    .descricao i {
+        width: 0;
+        padding-left: 10px;
+    }
+    
+    .footer p {        
+        justify-content: center;
+        line-height: 21px;
+        width: 260px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+
+    .descricao p {
+        font-size: 0.6rem;
+        width: 190px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+
+    .footer {
+        padding: 0 30px;
+    }
+
+    .footer-container {
+        height: 165px;
+        padding-top: 7px;
+    }
+    
+    .descricao p {
+        font-size: 0.6rem;
+        width: 150px;
     }
 }

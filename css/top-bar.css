@@ -89,3 +89,19 @@
         justify-content: space-around;
     }
 }
+
+@media screen and (max-width: 425px) {
+    .logo img {
+        width: 80px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .logo img {
+        width: 70px;
+    }
+
+    .nav-2 {
+        width: 30%;
+    }
+}
